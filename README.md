@@ -1,5 +1,28 @@
 # patika_react_odev_1
 https://app.patika.dev/abbicici - Patika React Ödevi 1
+
+Gereksinimler
+-  Bu fonksiyon **"async"** olarak tanımlanmalı ve default olarak dışa aktarılmalıdır. Fonksiyonun içindeki asenkron fonksiyonlar **"await"** ile tanımlanmalıdır.
+-  Fonksiyon **Number** tipinde tek parametre alır. Bu parametre **user id**'yi belirtir.
+-  Fonksiyonun görevi aşağıdaki endpoint'e giderek parametrede verilen user id ile ilgili kullanıcının verilerini çekmek olmalı. İstekleri **"axios"** kütüphanesini kullanarak yapmanız gerekiyor. İsteği yaparken aşağıdaki endpointin sonundaki rakamı parametrede gelen user id'ile değiştirmeniz gerekiyor.
+
+	 [https://jsonplaceholder.typicode.com/users/1](https://jsonplaceholder.typicode.com/users/1)
+
+-  Yine aynı fonksiyonun içerisinde ve yine aynı user id için bir de "posts" isteği yapılmalıdır.İsteği yaparken aşağıdaki endpoint'in sonundaki rakamı parametrede gelen user id'ile değiştirmeniz gerekiyor.
+
+	[https://jsonplaceholder.typicode.com/posts?userId=1](https://jsonplaceholder.typicode.com/posts?userId=1)
+
+-  Artık elimizde kullanıcı bilgileri ve bu kullanıcının post'ları var. Bu iki veriyi birleştirip return edin. 
+
+"app.js" dosyasına yazmış olduğunuz "getData" isimli fonksiyonu "import" edin.
+Bir alt satırda bu fonksiyonu çalıştırın ve gelen sonucu log'layın.
+
+-----------------------------------------
+
+SONUÇ
+
+Birinci user ve postları için çıktı aşşağıdaki gibidir.
+Çıktı
 ```
  node odev.js
 Debugger attached.
@@ -119,3 +142,6 @@ Debugger attached.
 }
 Waiting for the debugger to disconnect...
 ```
+
+![1](https://user-images.githubusercontent.com/78693320/184554190-601948b6-079a-4cf0-99d5-860efd9fefca.png)
+
